@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:id="@+id/symbol"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pic"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--输入框-->
+    <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:hint="管理员账号"
+            android:textSize="20sp"
+            android:singleLine="true"/>
+    <!--输入框-->
+    <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="管理员密码"
+            android:textSize="20sp"
+            android:inputType="textPassword"/>
+    <!--按钮-->
+    <Button
+            android:id="@+id/btn_login"
+            android:text="登录"
+            android:background="@drawable/selector"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:onClick="login"/>
+
+    <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tv_find_psw"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码？"/>
+        <!--layout_weight="1" layout_width="0dp"实现均分效果-->
+        <TextView
+                android:id="@+id/tv_register"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管理员注册"/>
+    </RelativeLayout>
+</LinearLayout>

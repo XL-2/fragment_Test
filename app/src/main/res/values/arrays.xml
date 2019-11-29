@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="model">
+        <item>默认</item>
+        <item>警鸣</item>
+        <item>闪光</item>
+    </string-array>
+</resources>

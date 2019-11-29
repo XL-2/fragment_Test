@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="function">
+        <item>用户管理</item>
+        <item>数据库管理</item>
+        <item>清空数据库</item>
+        <item>反馈</item>
+        <item>关于</item>
+    </string-array>
+</resources>
